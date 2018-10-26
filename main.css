@@ -1,0 +1,74 @@
+* {
+    --size : 16pt;
+}
+
+body, td, input, textarea, button, select {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+td, input, textarea, button, select {
+    font-size: 1em;
+}
+
+
+body, td, input, textarea, button, select{
+    margin: 0px;
+    padding:0px;
+    background-color: #222;
+    color:#FFF;
+}
+
+table{
+    height: 100vh;
+    width: 100%;
+}
+
+table td{
+    background-color: #eee;
+    width:50%;
+    vertical-align: top;
+    margin:0px;
+    padding: 1px;
+}
+
+.w50{
+    width: 49%;
+}
+
+.w25{
+    width: 24%;
+}
+
+textarea{
+    height: 100vh;
+    width: 99%;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+button, select{
+    padding:12px;
+    height: 50px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+.flex > select {
+    display: block;
+    flex-grow: 3;
+}
+.flex > button {
+    display: block;
+    flex-grow: 1;
+}
+.color1{
+    background-color: #0a0;
+}
+
+
+canvas{
+    border: 1px solid #ccc;
+    width:100%;
+}

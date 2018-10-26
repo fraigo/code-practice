@@ -1,0 +1,17 @@
+[
+    {
+        "filename":"blank.js",
+        "description":"New",
+        "category":"Basic"
+    },
+    {
+        "filename":"square.js",
+        "description":"Square",
+        "category":"Basic"
+    },
+    {
+        "filename":"spiral.js",
+        "description":"Spiral",
+        "category":"Advanced"
+    }
+]

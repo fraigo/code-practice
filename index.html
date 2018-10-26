@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Run Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <table border="0" cellpadding="0" cellspacing="5">
+        <tr>
+            <td>
+                <div class="flex">
+                    <select class="color0" onchange="loadScript(this)" id="examples">
+                        <option value="">Select example</option>
+                    </select>
+                    <button class="" onclick="zoomFont(1)">+</button>
+                    <button class="" onclick="zoomFont(-1)">-</button>
+                </div>
+
+<textarea id="code" ></textarea>
+            </td>
+            <td>
+                <div class="flex">
+                    <button class="color1" onclick="runcode()" >Run</button>
+                </div>
+<canvas id="canvas" width="400" height="400" onmousemove="positionHint(this,arguments[0])">
+
+</canvas>                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
