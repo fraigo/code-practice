@@ -17,8 +17,8 @@
                     <select class="color0" onchange="loadScript(this)" id="examples">
                         <option value="">Select example</option>
                     </select>
-                    <button class="" onclick="zoomFont(1)">➕</button>
-                    <button class="" onclick="zoomFont(-1)">➖</button>
+                    <button class="" title="zoom +" onclick="zoomFont(1)">➕</button>
+                    <button class="" title="zoom -" onclick="zoomFont(-1)">➖</button>
                 </div>
 
 <textarea id="code" ></textarea>
@@ -27,7 +27,7 @@
                 <div class="flex">
                     <button class="color1" onclick="runcode()" >Run ▶️</button>
                 </div>
-<canvas id="canvas" width="400" height="400" onmousemove="positionHint(this,arguments[0])">
+<canvas id="canvas" width="400" height="400" onmousedown="positionClick(this,arguments[0])" ontouchstart="positionClick(this,arguments[0])" onmousemove="positionHint(this,arguments[0])">
 
 </canvas>                
             </td>

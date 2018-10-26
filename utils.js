@@ -60,6 +60,44 @@ function positionHint(obj,e){
     getCanvas().setAttribute("title",px+" , "+py);
 }
 
+function positionClick(obj,ev){
+    var x=ev.layerX;
+    var y=ev.layerY;
+    var xfactor=getCanvas().clientWidth/getCanvas().width;
+    var yfactor=getCanvas().clientHeight/getCanvas().height;
+    var px=Math.floor(x/xfactor);
+    var py=Math.floor(y/yfactor);
+    
+    //console.log(x,y,xfactor,yfactor,px,py);
+    var e=document.getElementById("positionclick");
+    if (!e){
+        e=document.createElement("div");
+        e.id="positionclick";
+        e.style.position="absolute";
+        
+        e.style.width="80px";
+        e.style.textAlign="center";
+        e.style.fontSize="12pt";
+        e.style.backgroundColor="rgba(255,255,255,0.4)";
+        e.style.border="1px solid gray";
+        e.style.borderRadius="5px 5px";
+        e.style.padding="5px 5px";
+        e.style.color="#444";
+        
+        document.body.appendChild(e);
+    }
+    e.style.top=ev.clientY+"px";
+    e.style.left=ev.clientX+"px";
+    e.style.display="";
+    e.innerHTML=(Math.round(px/5)*5)+" , "+(Math.round(py/5)*5);
+    
+    window.setTimeout(function(){
+        e.style.display="none";
+    },3000);
+    
+
+}
+
 
 function addCSSRule(sheet, selector, rules,index) {
     if(sheet.insertRule) {
