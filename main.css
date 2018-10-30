@@ -72,3 +72,11 @@ canvas{
     border: 1px solid #ccc;
     width:100%;
 }
+
+
+@media (max-width: 480px){
+  button, select{
+    padding:4px;
+    height: 30px;
+  }
+}
