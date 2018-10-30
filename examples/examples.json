@@ -5,14 +5,19 @@
         "category":"Basic"
     },
     {
+        "filename":"square.js",
+        "description":"Square",
+        "category":"Basic"
+    },
+    {
         "filename":"triangle.js",
         "description":"Triangle",
         "category":"Basic"
     },
     {
-        "filename":"square.js",
-        "description":"Square",
-        "category":"Basic"
+        "filename":"square-function.js",
+        "description":"Square function",
+        "category":"Intermediate"
     },
     {
         "filename":"spiral.js",
