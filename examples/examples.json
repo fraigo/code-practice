@@ -5,6 +5,11 @@
         "category":"Basic"
     },
     {
+        "filename":"triangle.js",
+        "description":"Triangle",
+        "category":"Basic"
+    },
+    {
         "filename":"square.js",
         "description":"Square",
         "category":"Basic"
