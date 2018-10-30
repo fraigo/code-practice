@@ -79,4 +79,7 @@ canvas{
     padding:4px;
     height: 30px;
   }
+  select{
+    max-width:110px;
+  }      
 }
