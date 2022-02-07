@@ -16,12 +16,12 @@ size = 350;
 i = 0;
 
 // start point
-lineFrom(0,0)
+start(0,0)
 
 while(margin<size/2){
-    lineTo(size-margin,margin);
-    lineTo(size-margin,size-margin);
-    lineTo(0+margin,size-margin);
-    lineTo(0+margin,0+margin+step);
+    moveTo(size-margin,margin);
+    moveTo(size-margin,size-margin);
+    moveTo(0+margin,size-margin);
+    moveTo(0+margin,0+margin+step);
     margin += step;
 }

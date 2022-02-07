@@ -194,9 +194,13 @@ function lineFrom(x,y){
     line.y1=y;
 }
 
+var start = lineFrom;
+var moveTo = lineTo;
+
 function lineColor(color){
     line.color=color;
 }
+var color = lineColor;
 
 function drawLine(x0,y0,x1,y1){
     line.x0=x0;

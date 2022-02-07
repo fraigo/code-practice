@@ -13,6 +13,16 @@
         "filename":"triangle.js",
         "description":"Triangle",
         "category":"Basic"
+    },    
+    {
+        "filename":"octagon.js",
+        "description":"Octagon",
+        "category":"Basic"
+    },
+    {
+        "filename":"star.js",
+        "description":"Star",
+        "category":"Basic"
     },
     {
         "filename":"square-function.js",

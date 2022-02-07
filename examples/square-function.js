@@ -10,16 +10,16 @@
 
 function square(x0, y0, size, color){
   // Start point
-  lineFrom(x0, y0);
+  start(x0, y0);
 
   // Set color
   line.color = color
 
   // Square lines
-  lineTo(x0 + size, y0);
-  lineTo(x0 + size, y0 + size);
-  lineTo(x0, y0 + size);
-  lineTo(x0, y0);
+  moveTo(x0 + size, y0);
+  moveTo(x0 + size, y0 + size);
+  moveTo(x0, y0 + size);
+  moveTo(x0, y0);
   
 }
 
