@@ -25,6 +25,21 @@
         "category":"Basic"
     },
     {
+        "filename":"steve.js",
+        "description":"Steve",
+        "category":"Basic"
+    },
+    {
+        "filename":"heart.js",
+        "description":"Heart",
+        "category":"Basic"
+    },
+    {
+        "filename":"rhombus.js",
+        "description":"Rhombus",
+        "category":"Basic"
+    },
+    {
         "filename":"square-function.js",
         "description":"Square function",
         "category":"Intermediate"

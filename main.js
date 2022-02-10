@@ -215,6 +215,18 @@ function setColor(c){
     putImage();
 }
 
+function insert(text_to_insert){
+    var textInput=getCode()
+    // will get the value of the input box
+    var text=textInput.value;
+    var curPos=textInput.selectionStart;
+   // setting the updated value in the text area
+   textInput.value=(text.slice(0,curPos)+text_to_insert+text.slice(curPos));
+   textInput.focus();
+   textInput.selectionStart=curPos;
+   textInput.selectionEnd=curPos+text_to_insert.length;
+}
+
 function zoomFont(diff){
     fontSize += diff*2;
     if (fontSize>20) fontSize=20;
