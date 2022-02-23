@@ -135,13 +135,21 @@ function putLine(){
     }, line);
 }
 
-function putImage(){
+function putObj(){
     appendFrame(function(obj,frame){
         clear();
         var ctx=getContext();
         ctx.fillStyle=obj.color;
         ctx.fillRect(obj.px,obj.py, obj.w, obj.h);
     },square);   
+}
+
+function putImage(url,x,y){
+    x = x || 0
+    y = y || 0
+    var img=new Image()
+    img.onload=function(){ getContext().drawImage(img,x,y) }
+    img.src=url
 }
 
 function runcode(){
@@ -178,7 +186,7 @@ function moveTo(x,y){
     square.py = y;
     line.x0=x;
     line.y0=y;
-    putImage(); 
+    putObj(); 
 }
 
 function lineTo(x,y){
@@ -212,7 +220,7 @@ function drawLine(x0,y0,x1,y1){
 
 function setColor(c){
     square.color = c;
-    putImage();
+    putObj();
 }
 
 function insert(text_to_insert){
